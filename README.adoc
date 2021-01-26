@@ -1,0 +1,27 @@
+= Spotify Subscription Demo
+:toc:
+:toclevels:1
+
+== Requirements
+
+____
+ Trebuie dezvoltata de la 0 o functionalitate prin care un utilizator sa-si poata faca o subscriptie la un serviciu (ex. Spotify), folosind Spring Boot, JPA si REST Web Services. Nu e nevoie de UI sau de securitate.
+____
+
+
+== Description
+Application uses H2 database which can be accessed through http://localhost:8080/h2-console/login.jsp URL.
+
+.REST API resources
+[%header,cols=3*]
+|===
+|Resource|HTTP verb|Description
+|/plans|GET|Return all available plans
+|/users|POST|Register an user account
+|/subscriptions|POST|Create a new subscription for an user
+|===
+
+== Run
+
+- Run `SpotifySubscriptionDemoApplication`
+- Import `Spotify Subscription Collection.postman_collection.json` in Postman(https://learning.postman.com/docs/getting-started/importing-and-exporting-data/[details]) in order to call the REST API resources
